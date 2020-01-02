@@ -1,6 +1,6 @@
 # My-Spendings
 
-Rest API Node.js with Typescript.
+Rest API Node.js with Typescript - Developed for learning purposes.
 
 The architecture used was inspired by domain driver design.
 
