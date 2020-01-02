@@ -1,5 +1,5 @@
-import { SpendingService } from './../../domain/services/spendingService';
-import { Spending } from './../../domain/entities/spending';
+import { SpendingService } from '../../domain/services/spendingService';
+import { Spending } from '../../domain/entities/spending';
 import { Request, Response } from "express";
 
 export const createSpending = async (req: Request, res: Response) => {

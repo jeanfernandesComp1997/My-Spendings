@@ -5,8 +5,8 @@ import bodyParser from "body-parser";
 const cors = require('cors')
 require('dotenv').config();
 
-import * as userController from "./application/controllers/userController";
-import * as spendingController from "./application/controllers/spendingController";
+import * as userController from "./presentation/controllers/userController";
+import * as spendingController from "./presentation/controllers/spendingController";
 
 const app = express();
 
