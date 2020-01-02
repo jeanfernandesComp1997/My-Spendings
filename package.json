@@ -1,0 +1,37 @@
+{
+  "name": "express-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/errorhandler": "0.0.32",
+    "@types/restify-cors-middleware": "^1.0.1",
+    "automapper-ts": "^1.9.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.4.1",
+    "mongoose": "^5.8.1",
+    "objectid": "^3.2.1",
+    "restify-cors-middleware": "^1.1.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.17",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  }
+}
