@@ -13,7 +13,7 @@ export const createSpending = async (req: Request, res: Response) => {
 
         response = {
             statusCode: 200,
-            response: result
+            body: result
         };
 
     } catch (error) {
@@ -38,7 +38,7 @@ export const listSpendings = async (req: Request, res: Response) => {
 
         response = {
             statusCode: 200,
-            response: result
+            body: result
         };
 
     } catch (error) {
@@ -64,7 +64,7 @@ export const deleteSpending = async (req: Request, res: Response) => {
 
         response = {
             statusCode: 200,
-            response: result
+            body: result
         };
 
     } catch (error) {
@@ -90,7 +90,7 @@ export const updateSpending = async (req: Request, res: Response) => {
 
         response = {
             statusCode: 200,
-            response: result
+            body: result
         };
 
     } catch (error) {

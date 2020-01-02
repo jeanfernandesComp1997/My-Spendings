@@ -5,7 +5,6 @@ import bodyParser from "body-parser";
 const cors = require('cors')
 require('dotenv').config();
 
-import * as homeController from "./application/controllers/homeController";
 import * as userController from "./application/controllers/userController";
 import * as spendingController from "./application/controllers/spendingController";
 
@@ -23,7 +22,6 @@ app.use(
 /**
  * Primary app routes.
  */
-app.post("/index", verifyJWT, homeController.index);
 app.post("/createuser", userController.createUser);
 app.get("/finduser", userController.findUser);
 app.post("/login", userController.login);

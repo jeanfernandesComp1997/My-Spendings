@@ -13,7 +13,7 @@ export const createUser = async (req: Request, res: Response) => {
 
         response = {
             statusCode: 200,
-            response: result
+            body: result
         };
 
     } catch (error) {
@@ -37,7 +37,7 @@ export const findUser = async (req: Request, res: Response) => {
 
         response = {
             statusCode: result !== null ? 200 : 404,
-            response: result ? result : 'User not found.'
+            body: result ? result : 'User not found.'
         };
 
     } catch (error) {
@@ -61,7 +61,8 @@ export const login = async (req: Request, res: Response) => {
 
         response = {
             statusCode: 200,
-            response: result
+            token: result,
+            expiresIn: "43200 seconds"
         };
 
     } catch (error) {
