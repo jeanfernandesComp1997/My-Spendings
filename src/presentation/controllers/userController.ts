@@ -57,11 +57,12 @@ export const login = async (req: Request, res: Response) => {
     let userService: UserService = new UserService();
 
     try {
-        let result: object = await userService.login(req.body.email, req.body.password);
+        let result: any = await userService.login(req.body.email, req.body.password);
 
         response = {
             statusCode: 200,
-            token: result,
+            token: result.token,
+            user: result.user,
             expiresIn: "43200 seconds"
         };
 

@@ -33,11 +33,14 @@ export class UserService extends ServiceBase<User> {
 
         if (new Crypt().decrypt(result[0].password) === password) {
 
-            let token = await jwt.sign({email: result[0].email}, process.env.SECRET, {
+            let accesToken = await jwt.sign({email: result[0].email}, process.env.SECRET, {
                 expiresIn: 43200
             });
 
-            return token;
+            return {
+                token: accesToken,
+                user: result[0]._id
+            };
         }
         else
             throw new Error('Password incorrect !');
